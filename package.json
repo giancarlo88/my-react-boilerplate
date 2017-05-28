@@ -14,12 +14,10 @@
     "precss": "^1.4.0",
     "prop-types": "^15.5.8",
     "react": "^15.5.4",
-    "react-addons-transition-group": "^15.5.2",
     "react-dom": "^15.5.4",
     "react-motion": "^0.5.0",
     "react-test-renderer": "^15.5.4",
     "sinon": "^2.2.0",
-    "spotify-graphql": "^1.4.0"
   },
   "devDependencies": {
     "autoprefixer": "6.7.2",
@@ -48,7 +46,6 @@
     "fs-extra": "0.30.0",
     "html-webpack-plugin": "2.24.0",
     "http-proxy-middleware": "0.17.3",
-    "jest": "18.1.0",
     "json-loader": "0.5.4",
     "object-assign": "4.1.1",
     "postcss-loader": "1.2.2",
@@ -66,31 +63,13 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "NODE_ENV=test mocha --watch --require ignore-styles  ./test/utils/config.js --recursive ./src/**/*.spec.js"
+    "test": "NODE_ENV=test mocha --watch --require ignore-styles  ./config/testconfig.js --recursive ./src/**/*.spec.js"
   },
-  "jest": {
-    "collectCoverageFrom": [
-      "src/**/*.{js,jsx}"
-    ],
-    "setupFiles": [
-      "<rootDir>/config/polyfills.js"
-    ],
-    "testPathIgnorePatterns": [
-      "<rootDir>[/\\\\](build|docs|node_modules|scripts)[/\\\\]"
-    ],
-    "testEnvironment": "node",
-    "testURL": "http://localhost",
-    "transform": {
-      "^.+\\.(js|jsx)$": "<rootDir>/node_modules/babel-jest",
-      "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
-      "^(?!.*\\.(js|jsx|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
-    },
-    "transformIgnorePatterns": [
-      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx)$"
-    ],
-    "moduleNameMapper": {
-      "^react-native$": "react-native-web"
-    }
+  "transformIgnorePatterns": [
+    "[/\\\\]node_modules[/\\\\].+\\.(js|jsx)$"
+  ],
+  "moduleNameMapper": {
+    "^react-native$": "react-native-web"
   },
   "babel": {
     "presets": [
