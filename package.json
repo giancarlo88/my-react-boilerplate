@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "axios": "^0.16.1",
     "babel-plugin-react-require": "^3.0.0",
     "chai": "^3.5.0",
     "enzyme": "^2.8.2",
