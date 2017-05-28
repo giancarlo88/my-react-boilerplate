@@ -7,10 +7,10 @@
 You can run this app from any computer by following these steps: 
 
 1. Install a browser add-on to disable CORS blocking. The following are recommended: 
-  -Chrome: https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi)
-  -Firefox: 
+  - Chrome: https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi)
+  - Firefox: 
   https://addons.mozilla.org/en-Gb/firefox/addon/cors-everywhere/
-  -Safari: 
+  - Safari: 
   Select 'Disable Cross-Origin restrictions from the 'Develop' menu. (If the 'Develop' menu isn't there, it can be enabled under 'Advanced' in Preferences)
 
 2. Clone the source from the repository by entering the following commands in the terminal: 
@@ -30,7 +30,7 @@ To search for a specific product, type a part of its name in the search box. It 
 
 Clicking on a product title will show a brief description of the product. You can show as many descriptions at a time as you like. If you want to hide the description of a product, click the product title again. 
 
-#### How this solution works
+## How this solution works
 
 This App has components whose roles are separated into logic and presentation. 
 
@@ -38,10 +38,10 @@ Due to the simple nature of the app, most of the logic surrounding App state is 
 
 This component manages the following functions: 
 
-  1. Triggering functions to call the API as it's mounting, storing the results in state if the call is successful, and triggering a UI response if there's an error. 
-  2. Passing down filter data to the Filters container, and passing down product data to the Products container. 
-  3. Handling changes to the currently selected filter by updating the store and passing this information both the Filters and Products containers whenever it changes.
-  4. Handling changes to the input field by updating the store and passing this information to the Products container whenever it changes. 
+1. Triggering functions to call the API as it's mounting, storing the results in state if the call is successful, and triggering a UI response if there's an error. 
+2. Passing down filter data to the Filters container, and passing down product data to the Products container. 
+3. Handling changes to the currently selected filter by updating the store and passing this information both the Filters and Products containers whenever it changes.
+4. Handling changes to the input field by updating the store and passing this information to the Products container whenever it changes. 
 
 The two containers have the role of receiving props and rendering components based on those props. Both map out components conditionally.
 
