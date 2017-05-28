@@ -58,7 +58,7 @@ class ProductSearch extends Component {
           handleFilterClick={this.handleFilterClick}
           selectedFilter={selectedFilter}
         />
-        <SearchInput handleInputChange={this.handleInputChange} />
+        <SearchInput handleInputChange={this.handleInputChange} query={query} />
         <ProductList
           products={products}
           query={query.toLowerCase()}

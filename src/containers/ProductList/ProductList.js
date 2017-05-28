@@ -16,7 +16,7 @@ const ProductList = props => {
           //  Render products based on selected filter or query. If either are falsy, ignore them.
           (!selectedFilter ||
             (selectedFilter && categoryTitles.indexOf(selectedFilter) >= 0)) &&
-          (!query || title.toLowerCase().indexOf(query) >= 0) &&
+          (!query || title.toLowerCase().indexOf(query) >= 0 || description.toLowerCase().indexOf(query) >= 0) &&
           <Product key={index} title={title} description={description} />
         )
       })}
