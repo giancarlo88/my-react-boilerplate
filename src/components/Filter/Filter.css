@@ -1,9 +1,0 @@
-.filter {
-    cursor: pointer;
-    margin-right: 10px;
-}
-
-.filter--selected {
-    text-decoration: underline;
-    font-weight: bold;
-}
