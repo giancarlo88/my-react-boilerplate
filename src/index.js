@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import ProductSearch from './views/ProductSearch/ProductSearch'
+import App from './views/App/App'
 import './index.css'
 
-ReactDOM.render(<ProductSearch />, document.getElementById('root'))
+ReactDOM.render(<App />, document.getElementById('root'))
