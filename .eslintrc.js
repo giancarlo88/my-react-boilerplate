@@ -11,6 +11,7 @@ module.exports = {
     'react/jsx-uses-react': 2,
     'react/jsx-uses-vars': 2,
     'no-useless-constructor': 0,
-    'space-before-function-paren': 0
+    'space-before-function-paren': 0,
+    semi: 0
   }
 }
